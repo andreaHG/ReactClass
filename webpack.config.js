@@ -101,7 +101,10 @@ switch(TARGET) {
       parts.setupCSS(PATHS.style),
       parts.devServer({
         // Customize host/port here if needed
-        host: process.env.HOST,
+        //host: process.env.HOST,
+        //host: 'react-class-andreahg.c9users.io',
+        host: process.env.C9_HOSTNAME,
+        https: false,
         port: process.env.PORT,
         poll: ENABLE_POLLING
       }),
